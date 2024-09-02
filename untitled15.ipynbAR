@@ -1,0 +1,436 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO/Ouw/hIbjSW7O8mFbwvnG",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Ajay69-hub/githubdemo/blob/main/untitled15.ipynbAR\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GRxwGjOeSFKT",
+        "outputId": "fa34ce92-51f8-4f21-ccc9-8074dff5a144"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n"
+          ]
+        }
+      ],
+      "source": [
+        "full_name =\"Ajay\"\n",
+        "age = 20\n",
+        "is_name = True\n",
+        "print(is_name)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#USER INPUT\n",
+        "\n",
+        "name = input(\"what is u r name?\")\n",
+        "print(\"Hi\" + name )\n",
+        "\n",
+        "name = input(\"waht is u r name?\")\n",
+        "fav_color = input(\"what is u r fav color?\")\n",
+        "print(name + \"likes\" + fav_color)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 356
+        },
+        "id": "uFtI_TmLTCEs",
+        "outputId": "39928770-814e-4df0-bed0-a993f56c0df2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "KeyboardInterrupt",
+          "evalue": "Interrupted by user",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mKeyboardInterrupt\u001b[0m                         Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-3-dff80fb9eef4>\u001b[0m in \u001b[0;36m<cell line: 3>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;31m#USER INPUT\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 3\u001b[0;31m \u001b[0mname\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"what is u r name?\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      4\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Hi\"\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0mname\u001b[0m \u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36mraw_input\u001b[0;34m(self, prompt)\u001b[0m\n\u001b[1;32m    849\u001b[0m                 \u001b[0;34m\"raw_input was called, but this frontend does not support input requests.\"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    850\u001b[0m             )\n\u001b[0;32m--> 851\u001b[0;31m         return self._input_request(str(prompt),\n\u001b[0m\u001b[1;32m    852\u001b[0m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_parent_ident\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    853\u001b[0m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_parent_header\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36m_input_request\u001b[0;34m(self, prompt, ident, parent, password)\u001b[0m\n\u001b[1;32m    893\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mKeyboardInterrupt\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    894\u001b[0m                 \u001b[0;31m# re-raise KeyboardInterrupt, to truncate traceback\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 895\u001b[0;31m                 \u001b[0;32mraise\u001b[0m \u001b[0mKeyboardInterrupt\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Interrupted by user\"\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0;32mNone\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    896\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mException\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0me\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    897\u001b[0m                 \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mlog\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mwarning\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Invalid Message:\"\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mexc_info\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;32mTrue\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mKeyboardInterrupt\u001b[0m: Interrupted by user"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = input(\"waht is u r name?\")\n",
+        "fav_color = input(\"what is u r fav color?\")\n",
+        "print(name + \"likes\" + fav_color)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_z5sQUkAU8CF",
+        "outputId": "911c63f0-9982-42e9-9bed-b98faebef84e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "waht is u r name?Ajay\n",
+            "what is u r fav color?Red\n",
+            "AjaylikesRed\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# type conversions\n",
+        "birth_year = input(\"enter ur birth year\")\n",
+        "print(type(birth_year))\n",
+        "age = 20222 - int(birth_year)\n",
+        "print(type(age))\n",
+        "print(age)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "o6-O3j3fV3-o",
+        "outputId": "89240050-77f1-4805-f489-ae48c56c083b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter ur birth year2000\n",
+            "<class 'str'>\n",
+            "<class 'int'>\n",
+            "18222\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "weigth_lbs  = input(\"enter ur weigth in lbs\")\n",
+        "weight_kg = int(weight_lbs) * 0.45\n",
+        "\n",
+        "print(weight kg)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 106
+        },
+        "id": "mxjKk8RWYRAe",
+        "outputId": "13e25e4e-b114-49cb-91b5-d56cd5ce9f0e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "invalid syntax. Perhaps you forgot a comma? (<ipython-input-10-48b45acccde7>, line 4)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-10-48b45acccde7>\"\u001b[0;36m, line \u001b[0;32m4\u001b[0m\n\u001b[0;31m    print(weight kg)\u001b[0m\n\u001b[0m          ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax. Perhaps you forgot a comma?\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#STRINGS\n",
+        "\n",
+        "course = \"MR. RAYAPUDI MUTHYALAIAH\"\n",
+        "print(course)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3SnWYgcNZVvV",
+        "outputId": "6ff18004-f89d-4f7d-f5de-25057a77e123"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "MR. RAYAPUDI MUTHYALAIAH\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "course = '''\n",
+        "MY NAME IS AJAY I AM FROM SIRIPURAM .\n",
+        "\n",
+        "I AM A STUDENT IN ST.MARY'S ENGINEERING COLLAGE.\n",
+        "\n",
+        "I AM CURRENTLY PURSUING MY BACHELOR OF ENGINEERING IN COMPUTER SCIENCE AND ENGINEERING.\n",
+        "\n",
+        "'''\n",
+        "print(course[2:]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 106
+        },
+        "id": "TChQypQ7aT0z",
+        "outputId": "9da6e20b-9e0a-4bb2-9934-78a4950329b2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "incomplete input (<ipython-input-18-0974bddb8fc5>, line 9)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-18-0974bddb8fc5>\"\u001b[0;36m, line \u001b[0;32m9\u001b[0m\n\u001b[0;31m    print(course[2:]\u001b[0m\n\u001b[0m                    ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m incomplete input\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# FORMATTED STRINGS\n",
+        "\n",
+        "first = \"Ajay\"\n",
+        "last = \"Rayapudi\"\n",
+        "message = first + \"[\" + last + \"] is a coder \"\n",
+        "msg = f\"{first} [{last}] is a coder\"\n",
+        "print(msg)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "T4kLDqP9cs0a",
+        "outputId": "04f5d632-7e75-4de2-a471-dfa969ce9070"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ajay [Rayapudi] is a coder\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# STRING METHODS\n",
+        "course = \"python for begineers\"\n",
+        "print(len(course))\n",
+        "print(course.upper())\n",
+        "print(course.lower())\n",
+        "print(course.find(\"7\"))\n",
+        "print(\"aere\" in course)\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "yJ5OLYS2eXcQ",
+        "outputId": "5e5d8670-fe69-4833-eb8e-5ccbe382fa22"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "20\n",
+            "PYTHON FOR BEGINEERS\n",
+            "python for begineers\n",
+            "-1\n",
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# ARTHMETIC OPERSTIONS\n",
+        "\n",
+        "x = 10\n",
+        "x = x + 3\n",
+        "x += 3\n",
+        "\n",
+        "print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wOyZ59mYh2rL",
+        "outputId": "4b96f686-76c3-4d43-d993-708a805d4c70"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# OPERATOR PRECEDENCE\n",
+        "\n",
+        "x = (10 +3 ) * 3 **2\n",
+        "print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WeZJumoFjJd8",
+        "outputId": "d7ad1eb2-a226-4ad1-ed65-53d33a1b21fb"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "117\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# MATH FUNCTIONS\n",
+        "import math\n",
+        "x = 2.9\n",
+        "print(round(x))\n",
+        "print(abs(-2.9))\n",
+        "print(math.ceil(2.9))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mJKpFA6AlThQ",
+        "outputId": "b631b2b2-86a6-4246-d317-81b6b991e892"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n",
+            "2.9\n",
+            "3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#  IF STATEMENTS\n",
+        "\n",
+        "is_hot = True\n",
+        "is_cool = True\n",
+        "if is_hot:\n",
+        "  print(\"its a hot day\")\n",
+        "  print(\"drink plenty of water\")\n",
+        "elif is_cool:\n",
+        "  print(\"its a cold day\")\n",
+        "  print(\"wear warm clothes\")\n",
+        "else:\n",
+        "\n",
+        "  print(\"enjoy the day\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cMe3USAGm0Xd",
+        "outputId": "b7655d03-f5a8-41eb-f11e-60efbd0e3b0c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "its a hot day\n",
+            "drink plenty of water\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#LOGICAL OPERATIONS\n",
+        "#AND OR\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "sBeX8jgdq3-8"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
